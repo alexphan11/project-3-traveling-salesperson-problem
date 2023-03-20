@@ -17,8 +17,8 @@ class BruteForce
 {
 	public:
 		BruteForce() {this->optimalCost = 0;};
-		void GenerateRoutes(int current, int n, std::vector<int>& path, std::vector<bool>& visited, double cost, const std::vector<std::vector<double>>& adjMatrix, double& minCost, std::vector<int>& bestPath);
-		void Algorithm(const std::vector<std::vector<double>>& adjMatrix);
+		void GenerateRoutes(int current, int n, std::vector<int>& path, std::vector<bool>& visited, double cost, const std::vector<std::vector<double>> adjMatrix, double& minCost, std::vector<int>& bestPath);
+		void Algorithm(const std::vector<std::vector<double>> adjMatrix);
 		double GetCost() {return this->optimalCost;};
 
 	private:

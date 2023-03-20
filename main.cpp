@@ -7,10 +7,13 @@
  ***************************************************************/
 
 #include <iostream>
-#include "brute-force.hpp"
+#include "simulation.hpp"
 
 int main()
 {
+	Simulation s;
+	
+	s.Run();
 
 	return 0;
 }

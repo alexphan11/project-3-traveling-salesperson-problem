@@ -5,7 +5,7 @@ CXX = g++
 # #  -Wall turns on most, but not all, compiler warnings
 # CXXFLAGS = -std=c++14 -g -Wall
 
-OBJECTS = brute-force.o
+OBJECTS = brute-force.o genetic.o simulation.o
 
 main: main.o $(OBJECTS)
 	$(CXX) $(CXXFLAGS) -o $@ $^

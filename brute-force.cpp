@@ -7,7 +7,7 @@
 
 #include "brute-force.hpp"
 
-void BruteForce::GenerateRoutes(int current, int n, std::vector<int>& path, std::vector<bool>& visited, double cost, const std::vector<std::vector<double>>& adjMatrix, double& minCost, std::vector<int>& bestPath)
+void BruteForce::GenerateRoutes(int current, int n, std::vector<int>& path, std::vector<bool>& visited, double cost, const std::vector<std::vector<double>> adjMatrix, double& minCost, std::vector<int>& bestPath)
 {
 	// Base case: all nodes have been visited
 	if (path.size() == n) 
@@ -36,7 +36,7 @@ void BruteForce::GenerateRoutes(int current, int n, std::vector<int>& path, std:
 	}
 }
 
-void BruteForce::Algorithm(const std::vector<std::vector<double>>& adjMatrix)
+void BruteForce::Algorithm(std::vector<std::vector<double>> adjMatrix)
 {
 	int n = adjMatrix.size();
 	double minCost = INF;
